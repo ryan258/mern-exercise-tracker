@@ -108,7 +108,7 @@ export default class CreateExercise extends Component {
               onChange={this.onChangeDuration}
             />
           </div>
-          <div className="form-gro">
+          <div className="form-group">
             <label>Date: </label>
             <div>
               <DatePicker
