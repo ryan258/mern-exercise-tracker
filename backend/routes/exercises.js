@@ -8,11 +8,13 @@ router.route('/').get((req, res) => {
 })
 
 router.route('/add').post((req, res) => {
+    // get all the data from the request
     const username = req.body.username
     const description = req.body.description
     const duration = Number(req.body.duration)
     const date = Date.parse(req.body.date)
 
+    // create a new object with the request data
     const newExercise = new Exercise({
         username,
         description,
@@ -20,6 +22,7 @@ router.route('/add').post((req, res) => {
         date
     })
 
+    // save the object to the database
     newExercise.save()
         .then(() => res.json('Exercise added!'))
         .catch(err => res.status(400).json('Error: ' + err))
