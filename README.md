@@ -1,3 +1,11 @@
+# Make it run
+
+- Have a database in MongoDB Atlas https://cloud.mongodb.com/
+- Point the .env file at the database
+- In the main folder run \$ yarn start to watch the front end
+- In the backend folder run \$ yarn start to watch the front end
+- Go on a create some things!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
